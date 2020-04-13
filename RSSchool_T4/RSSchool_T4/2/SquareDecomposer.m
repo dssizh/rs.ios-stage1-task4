@@ -18,7 +18,7 @@
 }
 
 - (NSMutableArray*)decompose:(NSNumber* )num withRemain:(NSNumber*)rem {
-    if (rem == 0) {
+    if ([rem intValue] == 0) {
         NSMutableArray *result = [[NSMutableArray alloc] initWithObjects:num, nil];
         return result;
     }
